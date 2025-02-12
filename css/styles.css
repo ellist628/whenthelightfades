@@ -125,10 +125,10 @@ nav ul li a:hover {
   z-index: 1;
 }
 
-.npc-image-container.has-alt:hover .default-image {
+.npc-image-container .has-alt:hover .default-image {
   opacity: 0;
 }
 
-.npc-image-container.has-alt:hover .alt-image {
+.npc-image-container .has-alt:hover .alt-image {
   opacity: 1;
 }
