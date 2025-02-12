@@ -40,3 +40,10 @@ input, select {
   filter: grayscale(100%) opacity(60%);
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0);
+  margin: 10px auto;
+  width: 80%;
+}
