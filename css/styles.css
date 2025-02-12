@@ -26,7 +26,28 @@ input, select {
   margin: 0 auto;
 }
 
+#enemy-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .npc-card {
+  background: #2a2a2a;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.enemy-card {
   background: #2a2a2a;
   border-radius: 12px;
   padding: 20px;
@@ -41,13 +62,29 @@ input, select {
   transform: scale(1.05);
 }
 
+.enemy-card:hover {
+  transform: scale(1.05);
+}
+
 .npc-card h2 {
   font-size: 20px;
   color: gold;
   margin: 10px 0 5px;
 }
 
+.enemy-card h2 {
+  font-size: 20px;
+  color: #c55;
+  margin: 10px 0 5px;
+}
+
 .npc-card h3 {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.enemy-card h3 {
   font-size: 16px;
   color: #ccc;
   margin-bottom: 10px;
@@ -58,7 +95,17 @@ input, select {
   color: #ddd;
 }
 
+.enemy-card p {
+  font-size: 14px;
+  color: #ddd;
+}
+
 .npc-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.enemy-card img {
   width: 100%;
   border-radius: 10px;
 }
