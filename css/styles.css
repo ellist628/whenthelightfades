@@ -240,6 +240,41 @@ nav ul li a:hover {
   background: none;
 }
 
+.minor-frame {
+  border: 3px solid #3cb371;
+  box-shadow: 0 0 15px rgba(60, 179, 113, 0.7);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.moderate-frame {
+  border: 3px solid #4682b4;
+  box-shadow: 0 0 15px rgba(70, 130, 180, 0.7);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.severe-frame {
+  border: 3px solid #ff8c00;
+  box-shadow: 0 0 15px rgba(255, 140, 0, 0.7);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.catastrophic-frame {
+  border: 3px solid #b22222;
+  box-shadow: 0 0 15px rgba(178, 34, 34, 0.7);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.eldritch-frame {
+  border: 3px solid #800080;
+  box-shadow: 0 0 15px rgba(128, 0, 128, 0.7);
+  padding: 10px;
+  border-radius: 12px;
+}
+
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
