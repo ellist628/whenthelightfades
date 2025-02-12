@@ -56,7 +56,7 @@
     "threatLevel": "Moderate",
     "firstEncountered": "Unknown",
     "description": "A spectral voidborn entity that feeds on memory and existence itself. Its form shifts between reality and nothingness, appearing as a cloaked, faceless figure with ethereal mist flowing from its body.",
-    "unlockedSections": ["],
+    "unlockedSections": [],
     "lore": "<cite>\"It doesn’t just kill you... it takes something from you. And the worst part? You don’t even remember what you lost.\"</cite>",
     "stats": {
       "HP": 52,
