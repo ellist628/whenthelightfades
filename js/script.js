@@ -1,4 +1,5 @@
 let npcData = [];
+let enemyData = [];
 
 document.addEventListener("DOMContentLoaded", function () {
   fetch("npcData.json")
