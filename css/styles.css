@@ -132,3 +132,16 @@ nav ul li a:hover {
 .npc-image-container.has-alt:hover .alt-image {
   opacity: 1;
 }
+
+.player-frame {
+  border: 3px solid gold;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.player-frame .npc-image-container {
+  border: 3px solid gold;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+  border-radius: 10px;
+}
