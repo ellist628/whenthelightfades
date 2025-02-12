@@ -33,6 +33,7 @@ function displayNPCs(npcs) {
 
   npcs.forEach(npc => {
     const npcCard = document.createElement("div");
+    
     if (npc.playerCharacter) {
       npcCard.classList.add("npc-card", "player-frame");
     } else {
@@ -41,10 +42,19 @@ function displayNPCs(npcs) {
   
     const imageClass = npc.status.toLowerCase() === "deceased" ? "greyed-out" : "";
 
-    const hoverEffect = npc.altImg ? `onmouseover="this.src='${npc.altImg}'" onmouseout="this.src='${npc.image}'"` : "";
+    let imageContent = `
+      <div class="npc-image-container">
+        <img src="${npc.image}" alt="${npc.name}" class="default-image ${imageClass}">
+    `;
+
+    if (npc.altImage) {
+      imageContent += `<img src="${npc.altImg}" alt="${npc.name} Plasmoid Form" class="alt-image ${imageClass}">`;
+    }
+
+    imageContent += `</div>`;
 
     npcCard.innerHTML = `
-      <img src="${npc.image}" alt="${npc.name}" class="${imageClass}" ${hoverEffect}>
+      ${imageContent}
       <h2>${npc.name}</h2>
       <p><strong>Occupation:</strong> ${npc.class}</p>
       <hr>
