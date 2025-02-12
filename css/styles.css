@@ -1,1 +1,39 @@
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center,
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+input, select {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#npc-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.npc-card {
+  background: #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.npc-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 
