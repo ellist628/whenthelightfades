@@ -4,8 +4,8 @@ var bounds = [[0, 0], [mapHeight, mapWidth]];
 
 var map = L.map('map', {
   crs: L.CRS.Simple,
-  minZoom: -2,
-  maxZoom: 2,
+  minZoom: 0,
+  maxZoom: 3,
   zoomSnap: 0.5,
   zoomDelta: 0.5,
   zoomControl: true,
