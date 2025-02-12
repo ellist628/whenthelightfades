@@ -48,14 +48,15 @@ input, select {
 }
 
 .enemy-card {
-  background: #2a2a2a;
+  background: #222;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease-in-out;
-  margin: auto;
-  max-width: 400px;
+  max-width: 450px;
+  min-width: 400px;
+  border: 3px solid transparent;
 }
 
 .npc-card:hover {
@@ -241,38 +242,51 @@ nav ul li a:hover {
 }
 
 .minor-frame {
-  border: 3px solid #3cb371;
-  box-shadow: 0 0 15px rgba(60, 179, 113, 0.7);
+  border-color: #3cb371;
+  box-shadow: 0 0 8px rgba(60, 179, 113, 0.7);
   padding: 10px;
   border-radius: 12px;
 }
 
 .moderate-frame {
-  border: 3px solid #4682b4;
-  box-shadow: 0 0 15px rgba(70, 130, 180, 0.7);
+  border-color: #4682b4;
+  box-shadow: 0 0 10px rgba(70, 130, 180, 0.7);
   padding: 10px;
   border-radius: 12px;
 }
 
 .severe-frame {
-  border: 3px solid #ff8c00;
-  box-shadow: 0 0 15px rgba(255, 140, 0, 0.7);
+  border-color: #ff8c00;
+  box-shadow: 0 0 12px rgba(255, 140, 0, 0.7);
   padding: 10px;
   border-radius: 12px;
 }
 
 .catastrophic-frame {
-  border: 3px solid #b22222;
+  border-color: #b22222;
   box-shadow: 0 0 15px rgba(178, 34, 34, 0.7);
   padding: 10px;
   border-radius: 12px;
 }
 
 .eldritch-frame {
-  border: 3px solid #800080;
+  border-color: #800080;
   box-shadow: 0 0 15px rgba(128, 0, 128, 0.7);
   padding: 10px;
   border-radius: 12px;
+  animation: eldritchGlow 2s infinite alternate ease-in-out;
+}
+
+@keyframes eldritchGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.7);
+  }
 }
 
 @media (max-width: 768px) {
