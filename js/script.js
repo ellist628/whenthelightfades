@@ -31,8 +31,6 @@ function displayNPCs(npcs) {
   const npcList = document.getElementById("npc-list");
   npcList.innerHTML = "";
 
-  npcs.sort((a, b) => a.name.localeCompare(b.name));
-
   npcs.forEach(npc => {
     const npcCard = document.createElement("div");
     
