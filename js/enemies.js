@@ -58,8 +58,8 @@ function displayEnemies(enemies) {
         <h3>${enemy.classification} - ${enemy.threatLevel}</h3>
         <p><strong>First Encountered:</strong> ${enemy.firstEncountered}</p>
         <p>${enemy.description}</p>
+        <hr>
       </div>
-      <hr>
     `;
 
     content += `
