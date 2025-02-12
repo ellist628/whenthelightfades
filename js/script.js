@@ -15,7 +15,7 @@ function filterAndSortNPCs() {
   const sortValue = document.getElementById("sortFilter").value;
 
   let filteredNPCs = npcData.filter(npc =>
-    npc.name.toLowerCase().includes(searchQuery && (statusFilter === "" || npc.status === statusFilter))
+    npc.name.toLowerCase().includes(searchQuery) && (statusFilter === "" || npc.status.toLowerCase() === statusFilter.toLowerCase())
   );
 
   if (sortValue === "a-z") {
@@ -35,7 +35,7 @@ function displayNPCs(npcs) {
     const npcCard = document.createElement("div");
     npcCard.classList.add("npc-card");
 
-    const imageClass = npc.status === "Deceased" ? "greyed-out" : "";
+    const imageClass = npc.status.toLowerCase() === "deceased" ? "greyed-out" : "";
 
     npcCard.innerHTML = `
       <img src="${npc.image}" alt="${npc.name}" class="${imageClass}">
