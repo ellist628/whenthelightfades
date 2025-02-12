@@ -99,8 +99,8 @@ nav ul li a:hover {
 
 .npc-image-container {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -115,18 +115,14 @@ nav ul li a:hover {
   transition: opacity 0.5s ease-in-out;
 }
 
-.npc-image-container .default-image {
-  opacity: 1;
-}
-
 .npc-image-container .alt-image {
   opacity: 0;
 }
 
-.npc-image-container:hover .alt-image {
+.npc-image-container.has-alt:hover .alt-image {
   opacity: 1;
 }
 
-.npc-image-container:hover .default-image {
+.npc-image-container.has-alt:hover .default-image {
   opacity: 0;
 }
