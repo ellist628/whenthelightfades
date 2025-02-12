@@ -42,8 +42,10 @@ function displayNPCs(npcs) {
   
     const imageClass = npc.status.toLowerCase() === "deceased" ? "greyed-out" : "";
 
+    let containerClass = npc.altImg ? "npc-image-container has-alt" : "npc-image-container";
+
     let imageContent = `
-      <div class="npc-image-container">
+      <div class="containerClass">
         <img src="${npc.image}" alt="${npc.name}" class="default-image ${imageClass}">
     `;
 
