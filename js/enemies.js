@@ -68,9 +68,9 @@ function displayEnemies(enemies) {
 
     content += `<div class="blurred ${isUnlocked("stats") ? "unlocked" : ""}">`;
     content += `
-      <p><strong>HP:</strong> ${enemy.stats.hp}</p>
-      <p><strong>AC:</strong> ${enemy.stats.ac}</p>
-      <p><strong>Speed: </strong>${enemy.stats.speed}</p>
+      <p><strong>HP:</strong> ${enemy.stats.HP}</p>
+      <p><strong>AC:</strong> ${enemy.stats.AC}</p>
+      <p><strong>Speed: </strong>${enemy.stats.Speed}</p>
       </div>
     `;
 
@@ -84,7 +84,9 @@ function displayEnemies(enemies) {
 
     content += `
       <div class="blurred ${isUnlocked("combatBehavior") ? "unlocked" : ""}">
-        <p><strong>Combat Behavior:</strong> ${enemy.combatBehavior}</p>`;
+        <p><strong>Combat Behavior:</strong> ${enemy.combatBehavior}</p>
+        <h3>Known Attacks</h3>
+    `;
     enemy.moveset.forEach(move => {
       content += `<p>${move}</p>`;
     });
