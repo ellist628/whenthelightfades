@@ -23,5 +23,29 @@
       "Claw - 1d8 slashing",
       "Void Rend - 2d6 necrotic"
     ]
+  },
+  {
+    "id": 2,
+    "name": "Gloam Creepers",
+    "image": "images/gloam_creepers.png",
+    "classification": "Aberration",
+    "threatLevel": "Minor",
+    "firstEncountered": "Unknown",
+    "description": "Skittering, ink-like parasites that lurk within darkened places, waiting for prey to pass through their domain.",
+    "unlockedSections": [],
+    "lore": "<cite>\"At first, it's just a shadow at your feet... but then the darkness moves, and suddenly, you're drowning in it.\"</cite>",
+    "stats": {
+      "HP": 9,
+      "AC": 13,
+      "Speed": "30 ft., Climb 20 ft."
+    },
+    "weaknesses": "",
+    "resistances": "Necrotic, Psychic",
+    "immunities": "Poison",
+    "combatBehavior": "Prefers ambush attacks, swarming isolated targets.",
+    "moveset": [
+      "Bite - 1d6 piercing + 1d4 necrotic",
+      "Infestation Swarm - 2d4 necrotic"
+    ]
   }
 ]
