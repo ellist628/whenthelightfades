@@ -1,11 +1,14 @@
-var mapWidth = 2000;
+ar mapWidth = 2000;
 var mapHeight = 1500;
 var bounds = [[0, 0], [mapHeight, mapWidth]];
 
 var map = L.map('map', {
   crs: L.CRS.Simple,
   minZoom: -2,
-  maxZoom: 2
+  maxZoom: 2,
+  zoomControl: true,
+  maxBounds: bounds,
+  maxBoundsViscosity: 1.0
 });
 
 var imageUrl = "images/solvaris.jpg";
