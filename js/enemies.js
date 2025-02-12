@@ -66,25 +66,25 @@ function displayEnemies(enemies) {
       </div>
     `;
 
+    content += `<div class="blurred ${isUnlocked("stats") ? "unlocked" : ""}">`;
+    content += `
+      <p><strong>HP:</strong> ${enemy.stats.hp}</p>
+      <p><strong>AC:</strong> ${enemy.stats.ac}</p>
+      <p><strong>Speed: </strong>${enemy.stats.speed}</p>
+      </div>
+    `;
+
     content += `
       <div class="blurred ${isUnlocked("weaknesses") ? "unlocked" : ""}">
         <p><strong>Weaknesses:</strong> ${enemy.weaknesses}</p>
-      </div>
-      <div class="blurred ${isUnlocked("resistances") ? "unlocked" : ""}">
         <p><strong>Resistances:</strong> ${enemy.resistances}</p>
-      </div>
-      <div class="blurred ${isUnlocked("immunities") ? "unlocked" : ""}">
         <p><strong>Immunities:</strong> ${enemy.immunities}</p>
       </div>
     `;
 
     content += `
       <div class="blurred ${isUnlocked("combatBehavior") ? "unlocked" : ""}">
-        <p><strong>Combat Behavior:</strong> ${enemy.combatBehavior}</p>
-      </div>
-    `;
-
-    content += `<div class="blurred ${isUnlocked("moveset") ? "unlocked" : ""}">`;
+        <p><strong>Combat Behavior:</strong> ${enemy.combatBehavior}</p>`;
     enemy.moveset.forEach(move => {
       content += `<p>${move}</p>`;
     });
