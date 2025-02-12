@@ -1,5 +1,12 @@
+let npcData = [];
+
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("npcData.json").then(response => response.json()).then(data => displayNPCs(data));
+  fetch("npcData.json")
+    .then(response => response.json())
+    .then(data => {
+      npcData = data;
+      displayNPCs(data));
+    });
 });
 
 function displayNPCs(npcs) {
@@ -23,6 +30,20 @@ function displayNPCs(npcs) {
 
     npcList.appendChild(npcCard);
   });
+}
+
+function sortNPCs() {
+  const sortValue = document.getElementById("sortFilter").value;
+
+  let sortedNPCs = [...npcData];
+
+  if (sortValue === "a-z") {
+    sortedNPCs.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (sortValue === "z-a") {
+    sortedNPCs.sort((a, b) => b.name.localeComppare(a.name));
+  }
+
+  dislayNPCs(sortedNPCs);
 }
 
 function filterNPCs() {
