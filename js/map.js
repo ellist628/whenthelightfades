@@ -1,8 +1,16 @@
-var map = L.map('map').setView([0, 0], 2);
+var mapWidth = 2000;
+var mapHeight = 1500;
+var bounds = [[0, 0], [mapHeight, mapWidth]];
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
+var map = L.map('map', {
+  crs: L.CRS.Simple,
+  minZoom: -2,
+  maxZoom: 2
+});
+
+var imageUrl = "images/solvaris.jpg";
+L.imageOverlay(imageUrl, bounds).addTo(map);
+map.fitBounds(bounds);
 
 var locations = [];
 
