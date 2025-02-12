@@ -1,6 +1,7 @@
 [
   {
     "id": 0,
-    "name": "Void Ravager"
+    "name": "Void Ravager",
+    "image": "images/void_ravager.png"
   }
 ]
