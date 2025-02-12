@@ -33,12 +33,18 @@ function displayNPCs(npcs) {
 
   npcs.forEach(npc => {
     const npcCard = document.createElement("div");
-    npcCard.classList.add("npc-card");
-
+    if (npc.playerCharacter) {
+      npcCard.classList.add("npc-card", "player-frame");
+    } else {
+      npcCard.classList.add("npc-card");
+    }
+  
     const imageClass = npc.status.toLowerCase() === "deceased" ? "greyed-out" : "";
 
+    const hoverEffect = npc.altImg ? `onmouseover="this.src='${npc.altImg}'" onmouseout="this.src='${npc.image}'"` : "";
+
     npcCard.innerHTML = `
-      <img src="${npc.image}" alt="${npc.name}" class="${imageClass}">
+      <img src="${npc.image}" alt="${npc.name}" class="${imageClass}" ${hoverEffect}>
       <h2>${npc.name}</h2>
       <p><strong>Occupation:</strong> ${npc.class}</p>
       <hr>
