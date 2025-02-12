@@ -71,5 +71,29 @@
       "Oblivion Strike - 2d6 necrotic",
       "Echoing Lament - 3d6 psychic"
     ]
+  },
+  {
+    "id": 4,
+    "name": "Maw of Silent Lament",
+    "image": "images/maw_of_silent_lament.png",
+    "classification": "Aberration",
+    "threatLevel": "Catastrophic",
+    "firstEncountered": "Unknown",
+    "description": "A colossal, floating void entity resembling a massive, writhing mass of void-flesh covered in countless weeping, blackened mouths. Its presence alone dims all light and fills the air with an overwhelming, sorrowful hum that drains the willpower of those who hear it.",
+    "unlockedSections": [],
+    "lore": "<cite>\"It doesn’t consume you in rage or hunger. It simply… mourns. It weeps as it devours, as if it regrets the inevitable.\"</cite>",
+    "stats": {
+      "HP": 280,
+      "AC": 18,
+      "Speed": "Fly 40 ft. (hover)"
+    },
+    "weaknesses": "Radiant",
+    "resistances": "Cold, Necrotic, Psychic",
+    "immunities": "Poison",
+    "combatBehavior": "It approaches slowly, steadily eroding all light and hope in its path.",
+    "moveset": [
+      "Lamenting Maw - 4d12 necrotic",
+      "Wail of Endless Sorrow - 8d8 psychic"
+    ]
   }
 ]
