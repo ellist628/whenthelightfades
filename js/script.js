@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("npcData.json")
     .then(response => response.json())
     .then(data => {
-      npcData = data;
+      npcData = data.sort((a, b) => a.name.localeCompare(b.name));
       filterAndSortNPCs();
     });
 });
