@@ -10,8 +10,10 @@ function displayNPCs(npcs) {
     const npcCard = document.createElement("div");
     npcCard.classList.add("npc-card");
 
+    const imageClass = npc.status === "Deceased" ? "greyed-out" : "";
+
     npcCard.innerHTML = `
-      <img src="${npc.image}" alt="${npc.name}">
+      <img src="${npc.image}" alt="${npc.name}" class="${imageClass}">
       <h2>${npc.name}</h2>
       <p><strong>Relation:</strong> ${npc.relation}</p>
       <p><strong>Status:</strong> ${npc.status}</p>
