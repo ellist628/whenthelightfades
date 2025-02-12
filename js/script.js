@@ -57,12 +57,14 @@ function displayNPCs(npcs) {
 
     imageContent += `</div>`;
 
+    let location = npc.seen ? `<p><strong>Last Seen:</strong> ${npc.seen}</p>` : ``;
+
     npcCard.innerHTML = `
       ${imageContent}
       <h2>${npc.name}</h2>
       <p><strong>Occupation:</strong> ${npc.class}</p>
       <hr>
-      <p><strong>Last Seen:</strong> ${npc.seen}</p>
+      ${location}
       <p><strong>Status:</strong> ${npc.status}</p>
     `;
 
