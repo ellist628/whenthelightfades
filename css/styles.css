@@ -84,3 +84,12 @@ nav ul li a {
 nav ul li a:hover {
   border-bottom: 2px solid white;
 }
+
+#map {
+  height: 600px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 2px solid #555;
+  border-radius: 10px;
+}
