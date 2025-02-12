@@ -171,3 +171,18 @@ nav ul li a:hover {
   box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #npc-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .npc-card {
+    padding: 15px;
+  }
+}
