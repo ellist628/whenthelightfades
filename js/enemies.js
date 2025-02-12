@@ -30,7 +30,20 @@ function displayEnemies(enemies) {
 
   enemies.forEach(enemy => {
     const enemyCard = document.createElement("div");
-    enemyCard.classList.add("enemy-card");
+
+    if (enemy.threatLevel === "Minor") {
+      enemyCard.classList.add("enemy-card", "minor-frame");
+    } else if (enemy.threatLevel === "Moderate") {
+      enemyCard.classList.add("enemy-card", "moderate-frame");
+    } else if (enemy.threatLevel === "Severe") {
+      enemyCard.classList.add("enemy-card", "severe-frame");
+    } else if (enemy.threatLevel === "Catastrophic") {
+      enemyCard.classList.add("enemy-card", "catastrophic-frame");
+    } else if (enemy.threatLevel === "Eldritch") {
+      enemyCard.classList.add("enemy-card", "eldritch-frame");
+    } else {
+      enemyCard.classList.add("enemy-card");
+    }
 
     let content = `
       <div class="enemy-image">
