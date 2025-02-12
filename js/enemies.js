@@ -32,11 +32,52 @@ function displayEnemies(enemies) {
     const enemyCard = document.createElement("div");
     enemyCard.classList.add("enemy-card");
 
-    enemyCard.innerHTML = `
-      <img src="${enemy.image}" alt="${enemy.name}">
+    let content = `
+      <div class="enemy-image">
+        <img src="${enemy.image}" alt="${enemy.name}">
+      </div>
       <h2>${enemy.name}</h2>
+      <h3>${enemy.classification} - ${enemy.threatLevel}</h3>
+      <p><strong>First Encountered:</strong> ${enemy.firstEncountered}</p>
+      <p>${enemy.description}</p>
+      <hr>
     `;
 
+    function isUnlocked(section) {
+      return enemy.unlockedSections.includes(section);
+    }
+
+    content += `
+      <div class="blurred ${isUnlocked("lore") ? "unlocked" : ""}">
+        <p><strong>Lore:</strong> ${enemy.lore}</p>
+      </div>
+    `;
+
+    content += `
+      <div class="blurred ${isUnlocked("weaknesses") ? "unlocked" : ""}">
+        <p><strong>Weaknesses:</strong> ${enemy.weaknesses}</p>
+      </div>
+      <div class="blurred ${isUnlocked("resistances") ? "unlocked" : ""}">
+        <p><strong>Resistances:</strong> ${enemy.resistances}</p>
+      </div>
+      <div class="blurred ${isUnlocked("immunities") ? "unlocked" : ""}">
+        <p><strong>Immunities:</strong> ${enemy.immunities}</p>
+      </div>
+    `;
+
+    content += `
+      <div class="blurred ${isUnlocked("combatBehavior") ? "unlocked" : ""}">
+        <p><strong>Combat Behavior:</strong> ${enemy.combatBehavior}</p>
+      </div>
+    `;
+
+    content += `<div class="blurred ${isUnlocked("moveset") ? "unlocked" : ""}">`;
+    enemy.moveset.forEach(move => {
+      content += `<p>${move}</p>`;
+    });
+    content += `</div>`;
+
+    enemyCard.innerHTML = content;
     enemyList.appendChild(enemyCard);
   });
 }
