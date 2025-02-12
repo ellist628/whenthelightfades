@@ -55,5 +55,51 @@
     "relation": "Contender in the tournament",
     "status": "Alive",
     "class": "Bard"
+  },
+  {
+    "id": 8,
+    "name": "Abern'asa",
+    "image": "images/abernasa.png",
+    "relation": "Eddie's Character",
+    "status": "Alive",
+    "class": "Barbarian",
+    "playerCharacter": true
+  },
+  {
+    "id": 9,
+    "name": "Erin Glyce",
+    "image": "images/erin_glyce.png",
+    "altImg": "images/erin_glyce_nitro.png",
+    "relation": "Austin's Character",
+    "status": "Alive",
+    "class": "Artificer",
+    "playerCharacter": true
+  },
+  {
+    "id": 10,
+    "name": "Lunk Stonefist",
+    "image": "images/lunk_stonefist.png",
+    "relation": "Nick's Character",
+    "status": "Alive",
+    "class": "Barbarian",
+    "playerCharacter": true
+  },
+  {
+    "id": 11,
+    "name": "Varian Blackthorn",
+    "image": "images/varian_blackthorn.png",
+    "relation": "Andrew's Character",
+    "status": "Alive",
+    "class": "Sorcerer",
+    "playerCharacter": true
+  },
+  {
+    "id": 12,
+    "name": "Yeldok Otibor",
+    "image": "images/yeldok_otibor.png",
+    "relation": "Jayson's Character",
+    "status": "Alive",
+    "class": "Barbarian",
+    "playerCharacter": true
   }
 ]
