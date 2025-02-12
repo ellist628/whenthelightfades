@@ -115,14 +115,20 @@ nav ul li a:hover {
   transition: opacity 0.5s ease-in-out;
 }
 
+.npc-image-container .default-image {
+  opacity: 1;
+  z-index: 2;
+}
+
 .npc-image-container .alt-image {
+  opacity: 0;
+  z-index: 1;
+}
+
+.npc-image-container.has-alt:hover .default-image {
   opacity: 0;
 }
 
 .npc-image-container.has-alt:hover .alt-image {
   opacity: 1;
-}
-
-.npc-image-container.has-alt:hover .default-image {
-  opacity: 0;
 }
