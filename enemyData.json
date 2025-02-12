@@ -37,7 +37,7 @@
     "stats": {
       "HP": 9,
       "AC": 13,
-      "Speed": "30 ft., <strong>Climb:</strong 20 ft."
+      "Speed": "30 ft., Climb 20 ft."
     },
     "weaknesses": "",
     "resistances": "Necrotic, Psychic",
@@ -61,7 +61,7 @@
     "stats": {
       "HP": 52,
       "AC": 14,
-      "Speed": "30 ft., <strong>Hover:</strong> 20 ft."
+      "Speed": "30 ft., Hover 20 ft."
     },
     "weaknesses": "Radiant",
     "resistances": "Cold, Necrotic, Psychic",
@@ -94,6 +94,29 @@
     "moveset": [
       "Lamenting Maw - 4d12 necrotic",
       "Wail of Endless Sorrow - 8d8 psychic"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Hollow Regent",
+    "image": "images/hollow_regent.png",
+    "classification": "Aberration",
+    "threatLevel": "Eldritch",
+    "firstEncountered": "Unknown",
+    "description": "A towering, god-like entity wrapped in an endless cloak of void-stuff, its shifting form unraveling reality itself. Its head is a massive, cracked halo of darkness, within which a swirling abyss replaces a face. Where it steps, the land crumbles into nothingness, entire cities fading into oblivion in its wake.",
+    "unlockedSections": [],
+    "lore": "<cite>\"It does not seek to conquer. It does not seek to destroy. It merely exists to remind you: all things return to the Void.\"</cite>",
+    "stats": {
+      "HP": 666,
+      "AC": 22,
+      "Speed": "40 ft., Fly 60 ft. (hover)"
+    },
+    "weaknesses": "",
+    "resistances": "Cold, Necrotic, Psychic",
+    "immunities": "Poison",
+    "combatBehavior": "When engaged, it does not rage or react; it simply continues.",
+    "moveset": [
+      "Void Cascade - 16d10 necrotic"
     ]
   }
 ]
