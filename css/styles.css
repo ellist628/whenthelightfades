@@ -36,4 +36,7 @@ input, select {
   border-radius: 10px;
 }
 
+.greyed-out {
+  filter: grayscale(100%) opacity(60%);
+}
 
