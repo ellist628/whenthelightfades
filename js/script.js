@@ -15,6 +15,7 @@ function displayNPCs(npcs) {
     npcCard.innerHTML = `
       <img src="${npc.image}" alt="${npc.name}" class="${imageClass}">
       <h2>${npc.name}</h2>
+      <h3>${npc.class}</h3>
       <p><strong>Relation:</strong> ${npc.relation}</p>
       <p><strong>Status:</strong> ${npc.status}</p>
     `;
