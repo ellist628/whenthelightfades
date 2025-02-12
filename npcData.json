@@ -5,34 +5,55 @@
     "name": "Fizzle Brim",
     "image": "images/fizzle_brim.png",
     "relation": "Erin's Co-Worker",
-    "status": "Alive"
+    "status": "Alive",
+    "class": "Artificer (Alchemist)"
   },
   {
     "id": 2,
     "name": "Liam Dornwell",
     "image": "images/liam_dornwell.png",
     "relation": "Abern'asa's Partner @ Oakhollow",
-    "status": "Alive"
+    "status": "Alive",
+    "class": "Fighter (Battle Master)"
   },
   {
     "id": 3,
     "name": "Aldric Holloway",
     "image": "images/aldric_holloway.png",
     "relation": "Oakhollow's Mayor",
-    "status": "Deceased"
+    "status": "Deceased",
+    "class": "Cleric (Sage)"
   },
   {
     "id": 4,
     "name": "Sizzle Bops",
     "image": "images/sizzle_bops.png",
     "relation": "Contender in the initial tournament",
-    "status": "Alive"
+    "status": "Alive",
+    "class": "Warlock (Pyromancer)"
   },
   {
     "id": 5,
     "name": "Flapjack",
     "image": "images/flapjack.png",
     "relation": "Contender in the initial tournament",
-    "status": "Alive"
+    "status": "Alive",
+    "class": "Monk"
+  },
+  {
+    "id": 6,
+    "name": "Nixor",
+    "image": "images/nixor.png",
+    "relation": "Contender in the tournament",
+    "status": "Alive",
+    "class": "Fighter (Jouster)"
+  },
+  {
+    "id": 7,
+    "name": "Squeebles",
+    "image": "images/squeebles.png",
+    "relation": "Contender in the tournament",
+    "status": "Alive",
+    "class": "Bard"
   }
 ]
