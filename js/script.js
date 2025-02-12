@@ -82,7 +82,7 @@ let enemyData = [];
 
 document.addEventListener("DOMContentLoaded", function () {
   fetch("enemyData.json")
-    .then(response => response.join())
+    .then(response => response.json())
     .then(data => {
       enemyData = data.sort((a, b) => a.name.localeCompare(b.name));
       filterAndSortEnemies();
