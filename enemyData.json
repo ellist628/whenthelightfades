@@ -37,7 +37,7 @@
     "stats": {
       "HP": 9,
       "AC": 13,
-      "Speed": "30 ft., Climb 20 ft."
+      "Speed": "30 ft., <strong>Climb:</strong 20 ft."
     },
     "weaknesses": "",
     "resistances": "Necrotic, Psychic",
