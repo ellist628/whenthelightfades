@@ -4,7 +4,7 @@
     "name": "Void Ravager",
     "image": "images/void_ravager.png",
     "classification": "Aberration",
-    "threatLevel": "Eldritch",
+    "threatLevel": "Severe",
     "firstEncountered": "Oakhollow",
     "description": "A terrifying predator of the Void, consuming Light and leaving only darkness in its wake.",
     "unlockedSections": ["lore"],
