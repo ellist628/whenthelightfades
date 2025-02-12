@@ -4,63 +4,62 @@
     "id": 1,
     "name": "Fizzle Brim",
     "image": "images/fizzle_brim.png",
-    "relation": "Erin's Co-Worker",
     "status": "Alive",
-    "class": "Alchemist"
+    "class": "Alchemist",
+    "seen": "Solvaris"
   },
   {
     "id": 2,
     "name": "Liam Dornwell",
     "image": "images/liam_dornwell.png",
-    "relation": "Abern'asa's Partner @ Oakhollow",
     "status": "Alive",
-    "class": "Battle Master"
+    "class": "Battle Master",
+    "seen": "Solvaris"
   },
   {
     "id": 3,
     "name": "Aldric Holloway",
     "image": "images/aldric_holloway.png",
-    "relation": "Oakhollow's Mayor",
     "status": "Deceased",
-    "class": "Sage"
+    "class": "Sage",
+    "seen": "Oakhollow"
   },
   {
     "id": 4,
     "name": "Sizzle Bops",
     "image": "images/sizzle_bops.png",
-    "relation": "Contender in the initial tournament",
     "status": "Alive",
-    "class": "Pyromancer"
+    "class": "Pyromancer",
+    "seen": "Solvaris"
   },
   {
     "id": 5,
     "name": "Flapjack",
     "image": "images/flapjack.png",
-    "relation": "Contender in the initial tournament",
     "status": "Alive",
-    "class": "Chef"
+    "class": "Chef",
+    "seen": "Solvaris"
   },
   {
     "id": 6,
     "name": "Nixor",
     "image": "images/nixor.png",
-    "relation": "Contender in the tournament",
     "status": "Alive",
-    "class": "Jouster"
+    "class": "Jouster",
+    "seen": "Solvaris"
   },
   {
     "id": 7,
     "name": "Squeebles",
     "image": "images/squeebles.png",
-    "relation": "Contender in the tournament",
     "status": "Alive",
-    "class": "Bard"
+    "class": "Bard",
+    "seen": "Solvaris"
   },
   {
     "id": 8,
     "name": "Abern'asa",
     "image": "images/abernasa.png",
-    "relation": "Eddie's Character",
     "status": "Alive",
     "class": "Barbarian",
     "playerCharacter": true
@@ -70,7 +69,6 @@
     "name": "Erin Glyce",
     "image": "images/erin_glyce.png",
     "altImg": "images/erin_glyce_nitro.png",
-    "relation": "Austin's Character",
     "status": "Alive",
     "class": "Artificer",
     "playerCharacter": true
@@ -79,7 +77,6 @@
     "id": 10,
     "name": "Lunk Stonefist",
     "image": "images/lunk_stonefist.png",
-    "relation": "Nick's Character",
     "status": "Alive",
     "class": "Barbarian",
     "playerCharacter": true
@@ -88,7 +85,6 @@
     "id": 11,
     "name": "Varian Blackthorn",
     "image": "images/varian_blackthorn.png",
-    "relation": "Andrew's Character",
     "status": "Alive",
     "class": "Sorcerer",
     "playerCharacter": true
@@ -97,7 +93,6 @@
     "id": 12,
     "name": "Yeldok Otibor",
     "image": "images/yeldok_otibor.png",
-    "relation": "Jayson's Character",
     "status": "Alive",
     "class": "Barbarian",
     "playerCharacter": true
