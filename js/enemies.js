@@ -45,20 +45,22 @@ function displayEnemies(enemies) {
       enemyCard.classList.add("enemy-card");
     }
 
-    let content = `
-      <div class="enemy-image">
-        <img src="${enemy.image}" alt="${enemy.name}">
-      </div>
-      <h2>${enemy.name}</h2>
-      <h3>${enemy.classification} - ${enemy.threatLevel}</h3>
-      <p><strong>First Encountered:</strong> ${enemy.firstEncountered}</p>
-      <p>${enemy.description}</p>
-      <hr>
-    `;
-
     function isUnlocked(section) {
       return enemy.unlockedSections.includes(section);
     }
+
+    let content = `
+      <div class="blurred ${isUnlocked("general") ? "unlocked" : ""}">
+        <div class="enemy-image">
+          <img src="${enemy.image}" alt="${enemy.name}">
+        </div>
+        <h2>${enemy.name}</h2>
+        <h3>${enemy.classification} - ${enemy.threatLevel}</h3>
+        <p><strong>First Encountered:</strong> ${enemy.firstEncountered}</p>
+        <p>${enemy.description}</p>
+      </div>
+      <hr>
+    `;
 
     content += `
       <div class="blurred ${isUnlocked("lore") ? "unlocked" : ""}">
