@@ -1,1 +1,17 @@
 
+[
+  {
+    "id": 1,
+    "name": "Sizzle Bops",
+    "image": "images/sizzlebops.png",
+    "relation": "Contender in the initial tournament",
+    "status": "Alive"
+  },
+  {
+    "id": 2,
+    "name": "Flapjack",
+    "image": "images/flapjack.png",
+    "relation": "Contender in the initial tournament",
+    "status": "Alive"
+  },
+]
