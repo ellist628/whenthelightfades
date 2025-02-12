@@ -62,7 +62,7 @@ function displayNPCs(npcs) {
       <h2>${npc.name}</h2>
       <p><strong>Occupation:</strong> ${npc.class}</p>
       <hr>
-      <p><strong>Relation:</strong> ${npc.relation}</p>
+      <p><strong>Last Seen:</strong> ${npc.seen}</p>
       <p><strong>Status:</strong> ${npc.status}</p>
     `;
 
