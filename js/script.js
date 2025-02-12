@@ -47,7 +47,7 @@ function displayNPCs(npcs) {
         <img src="${npc.image}" alt="${npc.name}" class="default-image ${imageClass}">
     `;
 
-    if (npc.altImage) {
+    if (npc.altImg) {
       imageContent += `<img src="${npc.altImg}" alt="${npc.name} Plasmoid Form" class="alt-image ${imageClass}">`;
     }
 
