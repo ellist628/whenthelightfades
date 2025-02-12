@@ -15,8 +15,8 @@ function filterAndSortNPCs() {
   const sortValue = document.getElementById("sortFilter").value;
 
   let filteredNPCs = npcData.filter(npc =>
-    npc.name.toLowerCase().includes(searchQuery && (statusFilter === "" || npc.status === statusFilter)
-                                    );
+    npc.name.toLowerCase().includes(searchQuery && (statusFilter === "" || npc.status === statusFilter))
+  );
 
   if (sortValue === "a-z") {
     filteredNPCs.sort((a, b) => a.name.localeCompare(b.name));
