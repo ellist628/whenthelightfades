@@ -1,1 +1,23 @@
-<html></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When the Light Fades</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1>NPC Catalog</h1>
+
+    <input type="text" id="searchBar" placeholder="Search NPCs..." onkeyup="filterNPCs()">
+    <select id="statusFilter" onchange="filterNPCs()">
+      <option value="">All</option>
+      <option value="Alive">Alive</option>
+      <option value="Deceased">Deceased</option>
+    </select>
+
+    <div id="npc-list"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
