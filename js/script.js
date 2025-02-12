@@ -45,7 +45,7 @@ function displayNPCs(npcs) {
     let containerClass = npc.altImg ? "npc-image-container has-alt" : "npc-image-container";
 
     let imageContent = `
-      <div class="containerClass">
+      <div class="${containerClass}">
         <img src="${npc.image}" alt="${npc.name}" class="default-image ${imageClass}">
     `;
 
