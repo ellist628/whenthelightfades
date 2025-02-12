@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>When the Light Fades</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Characters</a></li>
+        <li><a href="enemies.html">Enemies</a></li>
+        <li><a href="map.html">Maps</a></li>
+      </ul>
+    </nav>
+    <h1>Character Catalog</h1>
+
+    <input type="text" id="searchBar" placeholder="Search Enemies..." onkeyup="filterAndSortEnemies()">
+    <select id="sortFilter" onchange="filterAndSortEnemies()">
+      <option value="a-z">A-Z</option>
+      <option value="z-a">Z-A</option>
+    </select>
+
+    <div id="enemy-list"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
