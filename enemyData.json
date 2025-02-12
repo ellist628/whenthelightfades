@@ -1,7 +1,27 @@
 [
   {
-    "id": 0,
+    "id": 1,
     "name": "Void Ravager",
-    "image": "images/void_ravager.png"
+    "image": "images/void_ravager.png",
+    "classification": "Aberration",
+    "threatLevel": "Severe",
+    "firstEncountered": "Oakhollow",
+    "description": "A terrifying predator of the Void, consuming Light and leaving only darkness in its wake.",
+    "unlockedSections": ["lore"],
+    "lore": "<cite>\"They do not hunt for hunger. They do not kill for sport. They exist to unmake, to consume, to drag all that shines into the abyss.\"</cite> —Aldric Holloway",
+    "stats": {
+      "HP": 127,
+      "AC": 14,
+      "Speed": "40 ft."
+    },
+    "weaknesses": "",
+    "resistances": "Necrotic, Psychic",
+    "immunities": "Cold, Poison",
+    "combatBehavior": "Prefers ambush attacks, jumping to evade retaliation.",
+    "moveset": [
+      "Bite - 1d10 piercing + 1d6 necrotic",
+      "Claw - 1d8 slashing",
+      "Void Rend - 2d6 necrotic"
+    ]
   }
 ]
