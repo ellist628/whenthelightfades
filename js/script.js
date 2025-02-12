@@ -9,6 +9,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+function filterAndSortNPCs() {
+  const searchQuery = document.getElementById("searchBar").value.toLowerCase();
+  const statusFilter = document.getElementById("statusFilter").value;
+  const sortValue = document.getElementById("sortFilter").value;
+
+  let filteredNPCs = npcData.filter(npc =>
+    npc.name.toLowerCase().includes(searchQuery && (statusFilter === "" || npc.status === statusFilter)
+                                    );
+
+  if (sortValue === "a-z") {
+    filteredNPCs.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (sortValue === "z-a") {
+    filteredNPCs.sort((a, b) => b.name.localeCompare(a.name));
+  }
+
+  displayNPCs(filteredNPCs);
+}
+
 function displayNPCs(npcs) {
   const npcList = document.getElementById("npc-list");
   npcList.innerHTML = "";
@@ -32,26 +50,6 @@ function displayNPCs(npcs) {
   });
 }
 
-function sortNPCs() {
-  const sortValue = document.getElementById("sortFilter").value;
-
-  let sortedNPCs = [...npcData];
-
-  if (sortValue === "a-z") {
-    sortedNPCs.sort((a, b) => a.name.localeCompare(b.name));
-  } else if (sortValue === "z-a") {
-    sortedNPCs.sort((a, b) => b.name.localeComppare(a.name));
-  }
-
-  dislayNPCs(sortedNPCs);
-}
-
-function filterNPCs() {
-  const searchQuery = document.getElementById("searchBar").value.toLowerCase();
-  const statusFilter = document.getElementById("statusFilter").value;
-
-  fetch("npcData.json").then(response => response.json()).then(data => {
-    let filteredNPCs = data.filter(npc => npc.name.toLowerCase().includes(searchQuery) && (statusFilter === "" || npc.status === statusFilter));
-    displayNPCs(filteredNPCs);
-  });
-}
+document.getElementById("searchBar").addEventListener("keyup", filterAndSortNPCs);
+document.getElementById("statusFilter").addEventListener("change", filterAndSortNPCs);
+document.getElementById("sortFilter").addEventListener("change", filterAndSortNPCs);
