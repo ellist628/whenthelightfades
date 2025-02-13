@@ -35,7 +35,7 @@
 .threat-severe {
   border-color: #ff8c00;
   box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
-  animation: pulseGlow 2s infinite ease-in-out;
+  animation: pulseGlow 2s infinite alternate ease-in-out;
 }
 
 .threat-severe h2 {
@@ -46,8 +46,14 @@
   0% {
     box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
   }
+  25% {
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
+  }
   50% {
     box-shadow: 0 0 15px rgba(255, 140, 0, 0.7);
+  }
+  75% {
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
   }
   100% {
     box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
@@ -56,8 +62,8 @@
 
 .threat-catastrophic {
   border-color: #b22222;
-  box-shadow: 0 0 10px rgba(178, 34, 34, 0.7);
-  animation: flickerGlow 2s infinite alternate ease-in-out;
+  box-shadow: 0 0 15px rgba(178, 34, 34, 0.7);
+  animation: flickerGlow 1.5s infinite linear, shake 1s infinite;
 }
 
 .threat-catastrophic h2 {
@@ -80,6 +86,14 @@
   100% {
     box-shadow: 0 0 12px rgba(178, 34, 34, 0.7);
   }
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(0.5px, 0.5px); }
+    50% { transform: translate(-0.5px, -0.5px); }
+    75% { transform: translate(0.5px, -0.5px); }
+    100% { transform: translate(-0.5px, 0.5px); }
 }
 
 .threat-eldritch {
