@@ -6,6 +6,18 @@ body {
   padding-top: 70px;
 }
 
+h1 {
+  margin-top: 20px;
+}
+
+.enemy-font {
+  color: #f55;
+}
+
+p {
+  font-size: 18px
+}
+
 nav {
   background: #1a1a1a;
   padding: 15px 0;
@@ -47,7 +59,7 @@ nav ul li a {
 
 .enemies-links:hover {
   background: rgba(255, 85, 85, 0.2);
-  color: red;
+  color: #f55;
 }
 
 .blurred {
