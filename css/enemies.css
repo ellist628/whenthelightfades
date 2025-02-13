@@ -32,14 +32,15 @@
 
 /* HEADERS */
 .enemy-card h2 {
-    font-size: 22px;
+    font-size: 28px;
     color: #E5C100; /* Elden Ring gold */
     margin-top: 10px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .enemy-card h3 {
-    font-size: 18px;
+    font-size: 24px;
     color: #cccccc;
     margin-bottom: 10px;
 }
@@ -49,7 +50,7 @@
     width: 100%;
     margin: 20px 0;
     border-collapse: collapse;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .enemy-stats th, .enemy-stats td {
