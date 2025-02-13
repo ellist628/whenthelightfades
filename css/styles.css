@@ -290,7 +290,7 @@ nav ul li a:hover {
 }
 
 @font-face {
-  font-family: "AncientModernTales";
+  font-family: 'AncientModernTales';
   src: url('fonts/AncientModernTales.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
