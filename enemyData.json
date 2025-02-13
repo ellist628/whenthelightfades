@@ -20,5 +20,27 @@
       "Damage Types": "Piercing, Slashing, Necrotic",
       "Attack Behavior": "Prefers ambush attacks, jumping to evade retaliation."
     }
+  },
+  {
+    "id": 2,
+    "name": "Otyugh",
+    "image": "images/otyugh.png",
+    "classification": "Aberration",
+    "threatLevel": "Catastrophic",
+    "firstEncountered": "Unknown",
+    "description": "A lingering anomaly from a lost era, its spore-infested body births endless horrors in the dark.",
+    "unlockedSections": [],
+    "lore": "<cite>\"It should not exist. The world moved on. The Void swallowed all. And yet, it lingers—festering, spreading, defying time itself.\"</cite> —Scholar From A Lost World",
+    "stats": {
+      "HP": 189,
+      "AC": 16,
+      "Speed": "30 ft. (burrow 20 ft.)",
+      "Weaknesses": "Fire",
+      "Resistances": "Necrotic, Poison",
+      "Immunities": "Acid",
+      "Conditions": "Paralysis, Disease",
+      "Damage Types": "Slashing, Bludgeoning, Acid",
+      "Attack Behavior": "Spews spider-infested spores, weakening prey before dragging them into its lair."
+    }
   }
 ]
