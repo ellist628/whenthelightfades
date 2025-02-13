@@ -100,6 +100,3 @@ function displayEnemies(enemies) {
     enemyList.appendChild(enemyCard);
   });
 }
-
-document.getElementById("searchBar").addEventListener("keyup", filterAndSortEnemies);
-document.getElementById("sortFilter").addEventListener("change", filterAndSortEnemies);
