@@ -12,111 +12,13 @@
     "stats": {
       "HP": 127,
       "AC": 14,
-      "Speed": "40 ft."
-    },
-    "weaknesses": "",
-    "resistances": "Necrotic, Psychic",
-    "immunities": "Cold, Poison",
-    "combatBehavior": "Prefers ambush attacks, jumping to evade retaliation.",
-    "moveset": [
-      "Bite - 1d10 piercing + 1d6 necrotic",
-      "Claw - 1d8 slashing",
-      "Void Rend - 2d6 necrotic"
-    ]
-  },
-  {
-    "id": 2,
-    "name": "Gloam Creepers",
-    "image": "images/gloam_creepers.png",
-    "classification": "Aberration",
-    "threatLevel": "Minor",
-    "firstEncountered": "Unknown",
-    "description": "Skittering, ink-like parasites that lurk within darkened places, waiting for prey to pass through their domain.",
-    "unlockedSections": [],
-    "lore": "<cite>\"At first, it's just a shadow at your feet... but then the darkness moves, and suddenly, you're drowning in it.\"</cite>",
-    "stats": {
-      "HP": 9,
-      "AC": 13,
-      "Speed": "30 ft., Climb 20 ft."
-    },
-    "weaknesses": "",
-    "resistances": "Necrotic, Psychic",
-    "immunities": "Poison",
-    "combatBehavior": "Prefers ambush attacks, swarming isolated targets.",
-    "moveset": [
-      "Bite - 1d6 piercing + 1d4 necrotic",
-      "Infestation Swarm - 2d4 necrotic"
-    ]
-  },
-  {
-    "id": 3,
-    "name": "Hollow Harvester",
-    "image": "images/hollow_harvester.png",
-    "classification": "Undead",
-    "threatLevel": "Moderate",
-    "firstEncountered": "Unknown",
-    "description": "A spectral voidborn entity that feeds on memory and existence itself. Its form shifts between reality and nothingness, appearing as a cloaked, faceless figure with ethereal mist flowing from its body.",
-    "unlockedSections": [],
-    "lore": "<cite>\"It doesn’t just kill you... it takes something from you. And the worst part? You don’t even remember what you lost.\"</cite>",
-    "stats": {
-      "HP": 52,
-      "AC": 14,
-      "Speed": "30 ft., Hover 20 ft."
-    },
-    "weaknesses": "Radiant",
-    "resistances": "Cold, Necrotic, Psychic",
-    "immunities": "Poison, Force",
-    "combatBehavior": "Prefers to stalk its prey, attacking when they are most vulnerable.",
-    "moveset": [
-      "Oblivion Strike - 2d6 necrotic",
-      "Echoing Lament - 3d6 psychic"
-    ]
-  },
-  {
-    "id": 4,
-    "name": "Maw of Silent Lament",
-    "image": "images/maw_of_silent_lament.png",
-    "classification": "Aberration",
-    "threatLevel": "Catastrophic",
-    "firstEncountered": "Unknown",
-    "description": "A colossal, floating void entity resembling a massive, writhing mass of void-flesh covered in countless weeping, blackened mouths. Its presence alone dims all light and fills the air with an overwhelming, sorrowful hum that drains the willpower of those who hear it.",
-    "unlockedSections": [],
-    "lore": "<cite>\"It doesn’t consume you in rage or hunger. It simply… mourns. It weeps as it devours, as if it regrets the inevitable.\"</cite>",
-    "stats": {
-      "HP": 280,
-      "AC": 18,
-      "Speed": "Fly 40 ft. (hover)"
-    },
-    "weaknesses": "Radiant",
-    "resistances": "Cold, Necrotic, Psychic",
-    "immunities": "Poison",
-    "combatBehavior": "It approaches slowly, steadily eroding all light and hope in its path.",
-    "moveset": [
-      "Lamenting Maw - 4d12 necrotic",
-      "Wail of Endless Sorrow - 8d8 psychic"
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Hollow Regent",
-    "image": "images/hollow_regent.png",
-    "classification": "Aberration",
-    "threatLevel": "Eldritch",
-    "firstEncountered": "Unknown",
-    "description": "A towering, god-like entity wrapped in an endless cloak of void-stuff, its shifting form unraveling reality itself. Its head is a massive, cracked halo of darkness, within which a swirling abyss replaces a face. Where it steps, the land crumbles into nothingness, entire cities fading into oblivion in its wake.",
-    "unlockedSections": [],
-    "lore": "<cite>\"It does not seek to conquer. It does not seek to destroy. It merely exists to remind you: all things return to the Void.\"</cite>",
-    "stats": {
-      "HP": 666,
-      "AC": 22,
-      "Speed": "40 ft., Fly 60 ft. (hover)"
-    },
-    "weaknesses": "",
-    "resistances": "Cold, Necrotic, Psychic",
-    "immunities": "Poison",
-    "combatBehavior": "When engaged, it does not rage or react; it simply continues.",
-    "moveset": [
-      "Void Cascade - 16d10 necrotic"
-    ]
+      "Speed": "40 ft.",
+      "Weaknesses": "None",
+      "Resistances": "Necrotic, Psychic",
+      "Immunities": "Cold, Poison",
+      "Conditions": "None",
+      "Damage Tyes": "Piercing, Slashing, Necrotic",
+      "Attack Behavior": "Prefers ambush attacks, jumping to evade retaliation.",
+    }
   }
 ]
