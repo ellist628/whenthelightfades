@@ -31,19 +31,28 @@ function displayEnemies(enemies) {
   enemies.forEach(enemy => {
     const enemyCard = document.createElement("div");
 
-    if (enemy.threatLevel === "Minor") {
-      enemyCard.classList.add("enemy-card", "minor-frame");
-    } else if (enemy.threatLevel === "Moderate") {
-      enemyCard.classList.add("enemy-card", "moderate-frame");
-    } else if (enemy.threatLevel === "Severe") {
-      enemyCard.classList.add("enemy-card", "severe-frame");
-    } else if (enemy.threatLevel === "Catastrophic") {
-      enemyCard.classList.add("enemy-card", "catastrophic-frame");
-    } else if (enemy.threatLevel === "Eldritch") {
-      enemyCard.classList.add("enemy-card", "eldritch-frame");
-    } else {
-      enemyCard.classList.add("enemy-card");
+    let threatClass = "";
+    switch (enemy.threatLevel.toLowerCase()) {
+      case "minor":
+        threatClass = "threat-minor";
+        break;
+      case "moderate":
+        threatClass = "threat-moderate";
+        break;
+      case "severe":
+        threatClass = "threat-severe";
+        break;
+      case "catastrophic":
+        threatClass = "threat-catastrophic";
+        break;
+      case "eldritch":
+        threatClass = "threat-eldritch";
+        break;
+      default:
+        threatClass = "";
     }
+
+    enemyCard.classList.add("enemy-card", threatClass);
 
     function isUnlocked(section) {
       return enemy.unlockedSections.includes(section);
