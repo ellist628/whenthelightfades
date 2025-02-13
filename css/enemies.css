@@ -1,17 +1,114 @@
 .enemy-card {
-  background: #222;
+  background: #181818;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease-in-out;
-  max-width: 450px;
+  max-width: 500px;
   min-width: 400px;
   border: 3px solid transparent;
 }
 
 .enemy-card:hover {
   transform: scale(1.05);
+}
+
+.threat-minor {
+  border-color: #3cb371;
+  box-shadow: 0 0 8px rgba(60, 179, 113, 0.5);
+}
+
+.threat-moderate {
+  border-color: #4682b4;
+  box-shadow: 0 0 8px rgba(70, 130, 180, 0.5);
+}
+
+.threat-severe {
+  border-color: #ff8c00;
+  box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
+  }
+}
+
+.threat-catastrophic {
+  border-color: #b22222;
+  box-shadow: 0 0 10px rgba(178, 34, 34, 0.7);
+  animation: flickerGlow 0.15s infinite alternate ease-in-out;
+}
+
+@keyframes flickerGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(178, 34, 34, 0.6);
+  }
+  25% {
+    box-shadow: 0 0 20px rgba(178, 34, 34, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 5px rgba(178, 34, 34, 0.5);
+  }
+  75% {
+    box-shadow: 0 0 18px rgba(255, 50, 50, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 12px rgba(178, 34, 34, 0.7);
+  }
+}
+
+.threat-eldritch {
+  border-color: #800080;
+  box-shadow: 0 0 15px rgba(128, 0, 128, 0.7);
+  animation: eldritchShift 3s infinite ease-in-out, eldritchDistort 4s infinite linear;
+}
+
+@keyframes eldritchShift {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(1deg) scale(1.02);
+  }
+  50% {
+    transform: rotate(-1deg) scale(1.01);
+  }
+  75% {
+    transform: rotate(1deg) scale(1.03);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes eldritchDistort {
+  0% {
+    box-shadow: 0 0 15px rgba(128, 0, 128, 0.6);
+  }
+  20% {
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.8);
+  }
+  40% {
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.5);
+  }
+  60% {
+    box-shadow: 0 0 30px rgba(180, 0, 255, 0.9);
+  }
+  80% {
+    box-shadow: 0 0 12px rgba(128, 0, 128, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 0, 255, 1);
+  }
 }
 
 /* ENEMY PAGE LAYOUT - FEXTRALIFE STYLE */
