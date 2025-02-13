@@ -30,7 +30,7 @@
     "firstEncountered": "Unknown",
     "description": "A lingering anomaly from a lost era, its spore-infested body births endless horrors in the dark.",
     "unlockedSections": [],
-    "lore": "<cite>\"It should not exist. The world moved on. The Void swallowed all. And yet, it lingers—festering, spreading, defying time itself.\"</cite> —Scholar From A Lost World",
+    "lore": "<cite>\"It should not exist. The world moved on. The Void swallowed all. And yet, it lingers—festering, spreading, defying time itself.\"</cite> —Scholar from a Lost World",
     "stats": {
       "HP": 189,
       "AC": 16,
@@ -41,6 +41,50 @@
       "Conditions": "Paralysis, Disease",
       "Damage Types": "Slashing, Bludgeoning, Acid",
       "Attack Behavior": "Spews spider-infested spores, weakening prey before dragging them into its lair."
+    }
+  },
+  {
+    "id": 3,
+    "name": "Void Mites",
+    "image": "images/void_mites.png",
+    "classification": "Aberration",
+    "threatLevel": "Minor",
+    "firstEncountered": "Unknown",
+    "description": "Tiny, insect-like creatures that swarm around sources of magical light, feeding on energy until only darkness remains.",
+    "unlockedSections": [],
+    "lore": "<cite>\"First, the lantern flickered. Then, it died. And in the darkness, I heard them—chittering, crawling, hungry for more.\"</cite> —Lost Traveler’s Journal",
+    "stats": {
+      "HP": 5,
+      "AC": 13,
+      "Speed": "30 ft., Climb 20 ft., Fly 20 ft.",
+      "Weaknesses": "Radiant",
+      "Resistances": "Cold, Necrotic, Psychic, Nonmagical Attacks",
+      "Immunities": "Poison",
+      "Conditions": "Charmed, Frightened, Poisoned",
+      "Damage Types": "Piercing, Necrotic",
+      "Attack Behavior": "Swarm targets in darkness, drain magical light sources first."
+    }
+  },
+  {
+    "id": 4,
+    "name": "Hollow Hound",
+    "image": "images/hollow_hound.png",
+    "classification": "Aberration",
+    "threatLevel": "Minor",
+    "firstEncountered": "Unknown",
+    "description": "Emaciated, wolf-like creatures with hollow, glowing eyes and bodies that shift between mist and flesh. They hunt in silence, their forms flickering in and out of reality.",
+    "unlockedSections": [],
+    "lore": "<cite>\"It didn't growl. It didn't snarl. It just watched. And then, it was suddenly there, sinking its fangs into my shoulder before I could even react.\"</cite> —Survivor of a Hollow Hound attack",
+    "stats": {
+      "HP": 22,
+      "AC": 12,
+      "Speed": "40 ft.",
+      "Weaknesses": "Radiant",
+      "Resistances": "Cold, Necrotic, Nonmagical Attacks",
+      "Immunities": "Poison",
+      "Conditions": "Frightened, Exhaustion, Charmed",
+      "Damage Types": "Piercing, Necrotic",
+      "Attack Behavior": "Hunts in packs, ambushes prey from darkness, teleports short distances when injured."
     }
   }
 ]
