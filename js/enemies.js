@@ -60,22 +60,19 @@ function displayEnemies(enemies) {
         <p><strong>First Encountered:</strong> ${enemy.firstEncountered}</p>
         <p>${enemy.description}</p>
         <div class="divider"></div>
-      </div>
-    `;
-
-    content += `
-      <div class="blurred ${isUnlocked("lore") ? "unlocked" : ""}">
-        <p>${enemy.lore}</p>
-        <div class="divider"></div>
+        <div class="blurred ${isUnlocked("lore") ? "unlocked" : ""}">
+          <p>${enemy.lore}</p>
+          <div class="divider"></div>
+        </div>
       </div>
     `;
 
     // Base Stats
     content += `
       <table class="enemy-stats blurred ${isUnlocked("stats") ? "unlocked" : ""}">
-        <tr><th>🩸 HP</th><td>${enemy.stats.HP}</td></tr>
-        <tr><th>🛡️ AC</th><td>${enemy.stats.AC}</td></tr>
-        <tr><th>⚡ Speed</th><td>${enemy.stats.Speed}</td></tr>
+        <tr><th>HP</th><td>${enemy.stats.HP}</td></tr>
+        <tr><th>AC</th><td>${enemy.stats.AC}</td></tr>
+        <tr><th>Speed</th><td>${enemy.stats.Speed}</td></tr>
       </table>
     `;
 
