@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
       enemyData = data.sort((a, b) => a.name.localeCompare(b.name));
       displayEnemies(enemyData);
     });
+
+  setupFilters();
 });
 
 function displayEnemies(enemies) {
@@ -93,4 +95,28 @@ function displayEnemies(enemies) {
     enemyCard.innerHTML = content;
     enemyList.appendChild(enemyCard);
   });
+}
+
+function setupFilters() {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", function () {
+      const filter = this.getAttribute("data-filter");
+      filterEnemies(filter);
+
+      filterButtons.forEach(btn => btn.classList.remove("active"));
+
+      this.classList.add("active");
+    });
+  });
+}
+
+function filterEnemies(threatLevel) {
+  if (threatLevel === "all") {
+    displayEnemies(enemyData);
+  } else {
+    const filtered = enemyData.filter(enemy => enemy.threatLevel.toLowerCase() === threatLevel.toLowerCase());
+    displayEnemies(filtered);
+  }
 }
