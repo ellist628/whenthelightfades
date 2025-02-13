@@ -57,7 +57,7 @@
 .threat-catastrophic {
   border-color: #b22222;
   box-shadow: 0 0 10px rgba(178, 34, 34, 0.7);
-  animation: flickerGlow 0.15s infinite alternate ease-in-out;
+  animation: flickerGlow 2s infinite alternate ease-in-out;
 }
 
 .threat-catastrophic h2 {
@@ -85,7 +85,7 @@
 .threat-eldritch {
   border-color: #800080;
   box-shadow: 0 0 15px rgba(128, 0, 128, 0.7);
-  animation: eldritchShift 3s infinite ease-in-out, eldritchDistort 4s infinite linear;
+  animation: eldritchShift 1.5s infinite ease-in-out, eldritchDistort 4s infinite linear;
 }
 
 .threat-eldritch h2 {
@@ -96,14 +96,17 @@
   0% {
     transform: rotate(0deg) scale(1);
   }
-  25% {
-    transform: rotate(1deg) scale(1.02);
+  20% {
+    transform: rotate(0.25deg) scale(1);
   }
-  50% {
-    transform: rotate(-1deg) scale(1.01);
+  40% {
+    transform: rotate(-0.25deg) scale(1);
   }
-  75% {
-    transform: rotate(1deg) scale(1.03);
+  60% {
+    transform: rotate(0.75deg) scale(1);
+  }
+  80% {
+    transform: rotate(-0.75deg) scale(1);
   }
   100% {
     transform: rotate(0deg) scale(1);
@@ -127,7 +130,7 @@
     box-shadow: 0 0 12px rgba(128, 0, 128, 0.7);
   }
   100% {
-    box-shadow: 0 0 20px rgba(255, 0, 255, 1);
+    box-shadow: 0 0 15px rgba(128, 0, 128, 0.6);
   }
 }
 
