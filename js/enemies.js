@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(response => response.json())
     .then(data => {
       enemyData = data.sort((a, b) => a.name.localeCompare(b.name));
-      filterAndSortEnemies();
+      displayEnemies(enemyData);
     });
 });
 
