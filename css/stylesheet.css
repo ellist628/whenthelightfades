@@ -73,6 +73,7 @@ nav ul li a {
   transition: background 0.3s ease-in-out;
   border-radius: 5px;
   font-size: 16px;
+  font-family: "Vecna", serif;
 }
 
 .filter-btn:hover {
