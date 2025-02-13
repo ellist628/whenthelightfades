@@ -7,7 +7,7 @@
     "threatLevel": "Severe",
     "firstEncountered": "Oakhollow",
     "description": "A terrifying predator of the Void, consuming Light and leaving only darkness in its wake.",
-    "unlockedSections": ["general", "lore", "combatBehavior", "moveset"],
+    "unlockedSections": ["general", "lore", "combatBehavior"],
     "lore": "<cite>\"They do not hunt for hunger. They do not kill for sport. They exist to unmake, to consume, to drag all that shines into the abyss.\"</cite> —Aldric Holloway",
     "stats": {
       "HP": 127,
