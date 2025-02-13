@@ -15,14 +15,18 @@
         <li><a href="enemies.html" class="enemies-links">Enemies</a></li>
       </ul>
     </nav>
+    
     <h1 style="color: #f55;">Enemy Catalog</h1>
-
-<!--     <input type="text" id="searchBar" placeholder="Search Enemies..." onkeyup="filterAndSortEnemies()">
-    <select id="sortFilter" onchange="filterAndSortEnemies()">
-      <option value="a-z">A-Z</option>
-      <option value="z-a">Z-A</option>
-    </select> -->
-
+    
+    <div id="filter-buttons">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Minor">Minor</button>
+      <button class="filter-btn" data-filter="Moderate">Moderate</button>
+      <button class="filter-btn" data-filter="Severe">Severe</button>
+      <button class="filter-btn" data-filter="Catastrophic">Catastrophic</button>
+      <button class="filter-btn" data-filter="Eldritch">Eldritch</button>
+    </div>
+    
     <div id="enemy-list"></div>
 
     <script src="js/enemies.js"></script>
