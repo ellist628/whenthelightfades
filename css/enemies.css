@@ -261,6 +261,12 @@
     background: none;
 }
 
+.blurred-image.unlocked {
+  filter: blur(0);
+  background: none;
+  padding: 10px;
+}
+
 /* ========== FEXTRALIFE-STYLE DIVIDERS ========== */
 .divider {
     height: 2px;
