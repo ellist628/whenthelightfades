@@ -58,6 +58,33 @@ nav ul li a {
   color: #f55;
 }
 
+#filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background: #222;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.filter-btn:hover {
+  background: #444;
+}
+
+.filter-btn.active {
+  background: #e5c100;
+  color: black;
+  font-weight: bold;
+}
+
 .blurred {
   filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);
