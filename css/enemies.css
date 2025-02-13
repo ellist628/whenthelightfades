@@ -1,9 +1,17 @@
-body {
-  background-color: #1e1e1e;
-  color: #fff;
-  font-family: 'Vecna', sans-serif;
+.enemy-card {
+  background: #222;
+  border-radius: 12px;
+  padding: 20px;
   text-align: center;
-  padding-top: 70px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+  max-width: 450px;
+  min-width: 400px;
+  border: 3px solid transparent;
+}
+
+.enemy-card:hover {
+  transform: scale(1.05);
 }
 
 /* ENEMY PAGE LAYOUT - FEXTRALIFE STYLE */
@@ -40,8 +48,7 @@ body {
 
 /* HEADERS */
 .enemy-card h2 {
-    font-size: 28px;
-    color: #E5C100; /* Elden Ring gold */
+    font-size: 28px; /* Elden Ring gold */
     margin-top: 10px;
     font-weight: bold;
     letter-spacing: 1px;
