@@ -248,9 +248,9 @@
 }
 
 .blurred-image {
-  filter: blur(24px);
+  filter: blur(32px);
   background: rgba(255, 255, 255, 0.05);
-  padding: 10px;
+  padding: 32px;
   border-radius: 8px;
   transition: filter 0.3s ease-in-out, background 0.3s ease-in-out;
 }
