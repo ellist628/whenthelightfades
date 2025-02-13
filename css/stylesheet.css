@@ -40,6 +40,16 @@ nav ul li a {
   border-radius: 5px;
 }
 
+.character-links:hover {
+  background: rgba(255, 170, 0, 0.2);
+  color: gold;
+}
+
+.enemies-links:hover {
+  background: rgba(255, 85, 85, 0.2);
+  color: red;
+}
+
 .blurred {
   filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);
