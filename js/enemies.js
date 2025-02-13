@@ -45,10 +45,10 @@ function displayEnemies(enemies) {
 
     // General Info
     let content = `
+      <div class="enemy-image blurred-image ${isUnlocked("image") ? "unlocked" : ""}">
+        <img src="${enemy.image}" alt="${enemy.name}">
+      </div>
       <div class="blurred ${isUnlocked("general") ? "unlocked" : ""}">
-        <div class="enemy-image">
-          <img src="${enemy.image}" alt="${enemy.name}">
-        </div>
         <h2>${enemy.name}</h2>
         <h3>${enemy.classification} - ${enemy.threatLevel}</h3>
         <p><strong>First Encountered:</strong> ${enemy.firstEncountered}</p>
