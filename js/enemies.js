@@ -49,6 +49,7 @@ function displayEnemies(enemies) {
       return enemy.unlockedSections.includes(section);
     }
 
+    // General Info
     let content = `
       <div class="blurred ${isUnlocked("general") ? "unlocked" : ""}">
         <div class="enemy-image">
@@ -64,34 +65,38 @@ function displayEnemies(enemies) {
 
     content += `
       <div class="blurred ${isUnlocked("lore") ? "unlocked" : ""}">
-        <p><strong>Lore:</strong> ${enemy.lore}</p>
+        <p>${enemy.lore}</p>
+        <hr>
       </div>
     `;
 
-    content += `<div class="blurred ${isUnlocked("stats") ? "unlocked" : ""}">`;
+    // Base Stats
     content += `
-      <p><strong>HP:</strong> ${enemy.stats.HP}</p>
-      <p><strong>AC:</strong> ${enemy.stats.AC}</p>
-      <p><strong>Speed: </strong>${enemy.stats.Speed}</p>
-      </div>
+      <table class="enemy-stats blurred ${isUnlocked("stats") ? "unlocked" : ""}">
+        <tr><th>HP</th><td>${enemy.stats.HP}</td></tr>
+        <tr><th>AC</th><td>${enemy.stats.AC}</td></tr>
+        <tr><th>Speed</th><td>${enemy.stats.Speed}</td></tr>
+      </table>
     `;
 
+    // Weaknesses // Resistances // Immunities
     content += `
-      <div class="blurred ${isUnlocked("weaknesses") ? "unlocked" : ""}">
-        <p><strong>Weaknesses:</strong> ${enemy.weaknesses}</p>
-        <p><strong>Resistances:</strong> ${enemy.resistances}</p>
-        <p><strong>Immunities:</strong> ${enemy.immunities}</p>
-      </div>
+      <table class="enemy-stats blurred ${isUnlocked("resistances") ? "unlocked" : ""}">
+        <tr><th>Weaknesses</th><td>${enemy.stats.Weaknesses}</td></tr>
+        <tr><th>Resistances</th><td>${enemy.stats.Resistances}</td></tr>
+        <tr><th>Immunities</th><td>${enemy.stats.Immunities}</td></tr>
+        <tr><th>Conditions</th><td>${enemy.stats.Conditions}</td></tr>
+      </table>
     `;
 
+    // Attack Info
     content += `
-      <div class="blurred ${isUnlocked("combatBehavior") ? "unlocked" : ""}">
-        <p><strong>Combat Behavior:</strong> ${enemy.combatBehavior}</p>
-        <h3>Known Attacks</h3>
+      <table class="enemy-stats blurred ${isUnlocked("attack") ? "unlocked" : ""}">
+        <tr><th>Damage Types</th><td>${enemy.stats["Damage Types"]}</td></tr>
+        <tr><th>Attack Behavior</th><td>${enemy.stats["Attack Behavior"]}</td></tr>
+      </table>
     `;
-    enemy.moveset.forEach(move => {
-      content += `<p>${move}</p>`;
-    });
+
     content += `</div>`;
 
     enemyCard.innerHTML = content;
