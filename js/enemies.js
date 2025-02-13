@@ -66,7 +66,7 @@ function displayEnemies(enemies) {
     content += `
       <div class="blurred ${isUnlocked("lore") ? "unlocked" : ""}">
         <p>${enemy.lore}</p>
-        <hr>
+        <div class="divider"></div>
       </div>
     `;
 
