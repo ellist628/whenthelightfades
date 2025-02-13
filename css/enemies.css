@@ -16,24 +16,6 @@
     flex-grow: 1;
 }
 
-/* ENEMY CARD */
-.enemy-card {
-    background: #181818; /* Dark fantasy-style background */
-    border-radius: 12px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.08); /* Subtle glowing shadow */
-    border: 3px solid rgba(255, 255, 255, 0.2); /* Border to mimic Elden Ring UI */
-    transition: transform 0.3s ease-in-out;
-    max-width: 100%;
-    cursor: pointer;
-}
-
-.enemy-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-}
-
 /* ENEMY IMAGE FRAME (Like Elden Ring UI) */
 .enemy-image {
     display: flex;
