@@ -40,11 +40,6 @@ nav ul li a {
   border-radius: 5px;
 }
 
-nav ul li a:hover {
-  background: rgba(255, 215, 0, 0.2);
-  color: gold;
-}
-
 .blurred {
   filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);
@@ -60,7 +55,7 @@ nav ul li a:hover {
 
 @font-face {
   font-family: 'Vecna';
-  src: url('../fonts/Vecna.tff') format('truetype');
+  src: url('../fonts/Vecna.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
