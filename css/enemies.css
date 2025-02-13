@@ -1,72 +1,86 @@
-/* ========== ENEMY CARD CONTAINER ========== */
-.enemy-card {
-    background: #181818; /* Dark fantasy theme */
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(255, 140, 0, 0.4); /* Soft glow */
-    border: 2px solid rgba(255, 140, 0, 0.8); /* Elden Ring UI-style border */
-    max-width: 500px;
-    font-family: 'Cinzel', serif; /* Elden Ring-style font */
-    transition: transform 0.3s ease-in-out;
+/* ENEMY PAGE LAYOUT - FEXTRALIFE STYLE */
+#enemy-list-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-/* Hover Effect */
+/* ENEMY LIST GRID */
+#enemy-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    flex-grow: 1;
+}
+
+/* ENEMY CARD */
+.enemy-card {
+    background: #181818; /* Dark fantasy-style background */
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.08); /* Subtle glowing shadow */
+    border: 3px solid rgba(255, 255, 255, 0.2); /* Border to mimic Elden Ring UI */
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%;
+    cursor: pointer;
+}
+
 .enemy-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 25px rgba(255, 140, 0, 0.6);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-/* ========== ENEMY IMAGE ========== */
+/* ENEMY IMAGE FRAME (Like Elden Ring UI) */
 .enemy-image {
     display: flex;
     justify-content: center;
-    border: 3px solid rgba(255, 215, 0, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 10px;
 }
 
 .enemy-image img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
-/* ========== ENEMY HEADER ========== */
+/* HEADERS */
 .enemy-card h2 {
-    font-size: 24px;
-    color: #E5C100; /* Elden Ring Gold */
+    font-size: 22px;
+    color: #E5C100; /* Elden Ring gold */
+    margin-top: 10px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 5px;
-    letter-spacing: 1px;
 }
 
 .enemy-card h3 {
     font-size: 18px;
-    color: #AAAAAA;
+    color: #cccccc;
     margin-bottom: 10px;
 }
 
-/* ========== STATS TABLE ========== */
+/* STAT TABLE - Styled Like Fextralife */
 .enemy-stats {
     width: 100%;
-    margin: 15px 0;
+    margin: 20px 0;
     border-collapse: collapse;
     font-size: 16px;
 }
 
 .enemy-stats th, .enemy-stats td {
-    padding: 8px 12px;
+    padding: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .enemy-stats th {
     text-align: left;
     font-weight: bold;
-    color: #E5C100;
-    width: 50%;
+    color: #E5C100; /* Elden Ring gold */
+    width: 40%;
 }
 
 .enemy-stats td {
@@ -74,33 +88,32 @@
     color: #ddd;
 }
 
-/* ========== DAMAGE & ATTACK BEHAVIOR SECTIONS ========== */
-.damage-section,
-.attack-behavior {
-    text-align: left;
+/* MOVELIST */
+.enemy-moveset h3 {
+    color: #E5C100;
+    margin-top: 20px;
+}
+
+.enemy-moveset ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.enemy-moveset li {
+    padding: 5px 0;
+    color: #ddd;
+}
+
+/* BLURRED LOCKED INFORMATION */
+.blurred {
+    filter: blur(8px);
     background: rgba(255, 255, 255, 0.05);
     padding: 10px;
     border-radius: 8px;
-    margin-top: 10px;
+    transition: filter 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
-.damage-section strong,
-.attack-behavior strong {
-    color: #E5C100;
-    display: block;
-    margin-bottom: 5px;
-}
-
-/* ========== BLURRED LOCKED INFORMATION ========== */
-.blurred {
-    filter: blur(12px);
-    background: rgba(255, 255, 255, 0.1);
-    padding: 12px;
-    border-radius: 8px;
-    transition: filter 0.5s ease-in-out, background 0.5s ease-in-out;
-}
-
-/* UNLOCKED INFO */
+/* UNLOCKED INFO (Removes Blur) */
 .blurred.unlocked {
     filter: blur(0);
     background: none;
