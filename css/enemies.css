@@ -247,6 +247,14 @@
     transition: filter 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
+.blurred-image {
+  filter: blur(16px);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 8px;
+  transition: filter 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
 /* UNLOCKED INFO (Removes Blur) */
 .blurred.unlocked {
     filter: blur(0);
