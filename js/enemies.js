@@ -47,7 +47,7 @@ function displayEnemies(enemies) {
 
     // General Info
     let content = `
-      <div class="enemy-header>
+      <div class="enemy-header">
         <div class="enemy-image blurred-image ${isUnlocked("image") ? "unlocked" : ""}">
           <img src="${enemy.image}" alt="${enemy.name}">
         </div>
