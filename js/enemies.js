@@ -47,53 +47,55 @@ function displayEnemies(enemies) {
 
     // General Info
     let content = `
-      <div class="enemy-image blurred-image ${isUnlocked("image") ? "unlocked" : ""}">
-        <img src="${enemy.image}" alt="${enemy.name}">
+      <div class="enemy-header>
+        <div class="enemy-image blurred-image ${isUnlocked("image") ? "unlocked" : ""}">
+          <img src="${enemy.image}" alt="${enemy.name}">
+        </div>
+        <div class="blurred ${isUnlocked("general") ? "unlocked" : ""}">
+          <h2>${enemy.name}</h2>
+          <h3>${enemy.classification} - ${enemy.threatLevel}</h3>
+          <p><strong>First Encountered:</strong> ${enemy.firstEncountered}</p>
+          <p>${enemy.description}</p>
+        </div>
+        <button class="expand-btn">+</button>
       </div>
-      <div class="blurred ${isUnlocked("general") ? "unlocked" : ""}">
-        <h2>${enemy.name}</h2>
-        <h3>${enemy.classification} - ${enemy.threatLevel}</h3>
-        <p><strong>First Encountered:</strong> ${enemy.firstEncountered}</p>
-        <p>${enemy.description}</p>
+      <div class="enemy-details">
         <div class="divider"></div>
         <div class="blurred ${isUnlocked("lore") ? "unlocked" : ""}">
           <p>${enemy.lore}</p>
         </div>
         <div class="divider"></div>
+      
+        <table class="enemy-stats blurred ${isUnlocked("stats") ? "unlocked" : ""}">
+          <tr><th>HP</th><td>${enemy.stats.HP}</td></tr>
+          <tr><th>AC</th><td>${enemy.stats.AC}</td></tr>
+          <tr><th>Speed</th><td>${enemy.stats.Speed}</td></tr>
+        </table>
+        
+        <table class="damage-section enemy-stats blurred ${isUnlocked("resistances") ? "unlocked" : ""}">
+          <tr><th>Weaknesses</th><td>${enemy.stats.Weaknesses}</td></tr>
+          <tr><th>Resistances</th><td>${enemy.stats.Resistances}</td></tr>
+          <tr><th>Immunities</th><td>${enemy.stats.Immunities}</td></tr>
+          <tr><th>Conditions</th><td>${enemy.stats.Conditions}</td></tr>
+        </table>
+        
+        <table class="attack-behavior enemy-stats blurred ${isUnlocked("attack") ? "unlocked" : ""}">
+          <tr><th>Damage Types</th><td>${enemy.stats["Damage Types"]}</td></tr>
+          <tr><th>Attack Behavior</th><td>${enemy.stats["Attack Behavior"]}</td></tr>
+        </table>
       </div>
     `;
 
-    // Base Stats
-    content += `
-      <table class="enemy-stats blurred ${isUnlocked("stats") ? "unlocked" : ""}">
-        <tr><th>HP</th><td>${enemy.stats.HP}</td></tr>
-        <tr><th>AC</th><td>${enemy.stats.AC}</td></tr>
-        <tr><th>Speed</th><td>${enemy.stats.Speed}</td></tr>
-      </table>
-    `;
-
-    // Weaknesses // Resistances // Immunities
-    content += `
-      <table class="damage-section enemy-stats blurred ${isUnlocked("resistances") ? "unlocked" : ""}">
-        <tr><th>Weaknesses</th><td>${enemy.stats.Weaknesses}</td></tr>
-        <tr><th>Resistances</th><td>${enemy.stats.Resistances}</td></tr>
-        <tr><th>Immunities</th><td>${enemy.stats.Immunities}</td></tr>
-        <tr><th>Conditions</th><td>${enemy.stats.Conditions}</td></tr>
-      </table>
-    `;
-
-    // Attack Info
-    content += `
-      <table class="attack-behavior enemy-stats blurred ${isUnlocked("attack") ? "unlocked" : ""}">
-        <tr><th>Damage Types</th><td>${enemy.stats["Damage Types"]}</td></tr>
-        <tr><th>Attack Behavior</th><td>${enemy.stats["Attack Behavior"]}</td></tr>
-      </table>
-    `;
-
-    content += `</div>`;
-
     enemyCard.innerHTML = content;
     enemyList.appendChild(enemyCard);
+  });
+
+  document.querySelectorAll(".expand-btn").forEach(button => {
+    button.addEventListener("click", function () {
+      const details = this.closest(".enemy-card").querySelector(".enemy-details");
+      details.classList.toggle("expanded");
+      this.textContext = details.classList.contains("expanded") ? "-" : "+";
+    });
   });
 }
 
