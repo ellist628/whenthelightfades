@@ -92,9 +92,21 @@ function displayEnemies(enemies) {
 
   document.querySelectorAll(".expand-btn").forEach(button => {
     button.addEventListener("click", function () {
-      const details = this.closest(".enemy-card").querySelector(".enemy-details");
-      details.classList.toggle("expanded");
-      this.textContext = details.classList.contains("expanded") ? "-" : "+";
+      const enemyCard = this.closest(".enemy-card");
+      const details = enemyCard.querySelector(".enemy-details");
+
+      if (details.classList.contains("expanded")) {
+        details.classList.remove("expanded");
+        this.textContent = "+";
+      } else {
+        document.querySelectorAll(".enemy-details.expanded").forEach(expandedCard => {
+          expandedCard.classList.remove("expanded");
+          expandedCard.closest(".enemy-card").querySelector(".expand-btn").textContent = "+";
+        });
+
+        details.classList.add("expanded");
+        this.textContent = "-";
+      }
     });
   });
 }
