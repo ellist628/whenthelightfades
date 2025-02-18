@@ -36,6 +36,8 @@ function displayNPCs(npcs) {
     
     if (npc.playerCharacter) {
       npcCard.classList.add("npc-card", "player-frame");
+    } else if (npc.status === "Deceased") {
+      npcCard.classList.add("npc-card", "dead");
     } else {
       npcCard.classList.add("npc-card");
     }
