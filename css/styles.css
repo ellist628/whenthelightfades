@@ -216,9 +216,9 @@ nav ul li a:hover {
   border-radius: 12px;
 }
 
-.player-frame .npc-image-container {
-  border: 3px solid gold;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+.npc-image-container .greyed-out {
+  border: 3px solid red;
+  box-shadow: 0 0 15px rgba(255, 55, 55, 0.7);
   border-radius: 10px;
 }
 
