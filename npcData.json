@@ -96,5 +96,13 @@
     "status": "Alive",
     "class": "Barbarian",
     "playerCharacter": true
+  },
+  {
+    "id": 13,
+    "name": "Mia Blackthorn",
+    "image": "images/mia_blackthorn.png",
+    "status": "Alive",
+    "class": "Wizard",
+    "seen": "Solvaris"
   }
 ]
