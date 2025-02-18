@@ -69,8 +69,16 @@ input, select {
 
 .npc-card h2 {
   font-size: 20px;
-  color: gold;
+  color: saddlebrown;
   margin: 10px 0 5px;
+}
+
+.npc-card.player-frame h2 {
+  color: green;
+}
+
+.npc-card.dead h2 {
+  color: grey;
 }
 
 .enemy-card h2 {
