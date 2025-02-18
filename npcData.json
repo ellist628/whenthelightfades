@@ -104,5 +104,69 @@
     "status": "Alive",
     "class": "Wizard",
     "seen": "Solvaris"
+  },
+  {
+    "id": 14,
+    "name": "Bren Calloway",
+    "image": "images/bren_calloway_rusted_keg.png",
+    "status": "Alive",
+    "class": "Ex-Pirate",
+    "seen": "Solvaris"
+  },
+  {
+    "id": 15,
+    "name": "Dorn Valcrest",
+    "image": "images/dorn_valcrest_gilded_gauntlet.png",
+    "status": "Alive",
+    "class": "Blacksmith",
+    "seen": "Solvaris"
+  },
+  {
+    "id": 16,
+    "name": "Haldor Steelgrip",
+    "image": "images/haldor_steelgrip_ironbrand_forge.png",
+    "status": "Alive",
+    "class": "Blacksmith",
+    "seen": "Solvaris"
+  },
+  {
+    "id": 17,
+    "name": "Jorren Voss",
+    "image": "images/jorren_voss_sunken_coin.png",
+    "status": "Alive",
+    "class": "Black Market Dealer",
+    "seen": "Solvaris"
+  },
+  {
+    "id": 18,
+    "name": "Madame Lyselle",
+    "image": "images/madame_lyselle_velvet_veil.png",
+    "status": "Alive",
+    "class": "Tailor",
+    "seen": "Solvaris"
+  },
+  {
+    "id": 19,
+    "name": "Mara Thalvik",
+    "image": "images/mara_thalvik_saddles_and_scales.png",
+    "status": "Alive",
+    "class": "Animal Handler",
+    "seen": "Solvaris"
+  },
+  {
+    "id": 20,
+    "name": "Mistress Seraphina Vale",
+    "image": "images/mistress_seraphina_vale_arcane_annex.png",
+    "status": "Alive",
+    "class": "Arcanist",
+    "seen": "Solvaris"
+  },
+  {
+    "id": 21,
+    "name": "Horsey",
+    "image": "images/horsey.png",
+    "status": "Alive",
+    "class": "Party's Mount",
+    "seen": "Solvaris"
   }
 ]
