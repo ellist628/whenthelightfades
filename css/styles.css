@@ -210,16 +210,10 @@ nav ul li a:hover {
 }
 
 .player-frame {
-  border: 3px solid gold;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+  border: 3px solid green;
+  box-shadow: 0 0 15px rgba(0, 128, 0, 0.7);
   padding: 10px;
   border-radius: 12px;
-}
-
-.npc-image-container .greyed-out {
-  border: 3px solid red;
-  box-shadow: 0 0 15px rgba(255, 55, 55, 0.7);
-  border-radius: 10px;
 }
 
 .enemy-image img {
